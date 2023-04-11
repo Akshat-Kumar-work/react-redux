@@ -6,8 +6,11 @@ const initialState = {
 
 //slice create kari hai createslice method se , aur slice ko export krdia hai
 export const CounterSlice = createSlice({
+    //slice name
     name:"counter",
+    //an object containing initial state value
     initialState, 
+
     reducers:{
         increment:(state)=>{
             state.value+=1;
@@ -17,7 +20,14 @@ export const CounterSlice = createSlice({
         }
     }
 })
+
+//createSlice method 2 chize deta hai action creator aur reducer
+//reducers k andar sare functions hoty hai 
+//action creator k andar reducer function ki implimentation hoti hai 
 //agar sare reducers function ki implementation ko slice m se bhar nikalana hai toh actions se niklengy
+
+//2 chize hamesha export krni hai
+
 //function ki implementation ko export kar rhe hai
 export const {increment, decrement} = CounterSlice.actions;
 

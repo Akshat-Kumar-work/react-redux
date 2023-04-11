@@ -1,5 +1,11 @@
+import Counter from "./components/Counter";
+
 const App = () => {
-  return <>Shopping Cart</>;
+  return (
+    <div>
+      <Counter></Counter>
+    </div>
+  );
 };
 
 export default App;
